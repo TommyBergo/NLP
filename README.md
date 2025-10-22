@@ -10,8 +10,8 @@ The project is organized into two main folders:
 - **src/** — contains four Python scripts, two per subtask:
   - `bilingual_model_task_1.py`
   - `bilingual_model_task_2.py`
-  - `monolingual_models_task_1.py` *(requires `--len=ita` or `--len=deu` argument)*
-  - `monolingual_models_task_2.py` *(requires `--len=ita` or `--len=deu` argument)*  
+  - `monolingual_models_task_1.py` *(requires `--lang=ita` or `--lang=deu` argument)*
+  - `monolingual_models_task_2.py` *(requires `--lang=ita` or `--lang=deu` argument)*  
 
   The `src/` folder also includes a Jupyter notebook that contains the same code logic as the scripts, but presented in a more **readable and exploratory form**.  
   The notebook was initially developed using the **multilingual model**, and it served as the foundation from which the **monolingual models** were later derived.  
@@ -25,4 +25,4 @@ Each script is preconfigured with default arguments, including dataset paths and
 To execute a script, make sure your **working directory** is the **project root** (i.e., the folder containing both `data/` and `src/`).
 
 ```bash
-python script_name.py (--len=LANGUAGE in case of monolingual model)
+python script_name.py (--lang=LANGUAGE in case of monolingual model)
