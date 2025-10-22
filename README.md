@@ -13,8 +13,9 @@ The project is organized into two main folders:
   - `monolingual_models_task_1.py` *(requires `--len=ita` or `--len=deu` argument)*
   - `monolingual_models_task_2.py` *(requires `--len=ita` or `--len=deu` argument)*  
 
-  The `src/` folder also includes a Jupyter notebook used during the early experimentation phase.  
-  It is **not** part of the final project implementation.
+  The `src/` folder also includes a Jupyter notebook that contains the same code logic as the scripts, but presented in a more **readable and exploratory form**.  
+  The notebook was initially developed using the **multilingual model**, and it served as the foundation from which the **monolingual models** were later derived.  
+  Despite its similarity, the notebook is **not** part of the final project implementation.
 
 Each script is preconfigured with default arguments, including dataset paths and training parameters.
 
