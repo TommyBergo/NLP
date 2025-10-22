@@ -21,8 +21,7 @@ Each script is preconfigured with default arguments, including dataset paths and
 ---
 
 ## Usage
-To execute a script, ensure your **working directory** is the **project root** (i.e., the folder containing both `data/` and `src/`).
+To execute a script, make sure your **working directory** is the **project root** (i.e., the folder containing both `data/` and `src/`).
 
-'''bash
+```bash
 python script_name.py (--len=LANGUAGE in case of monolingual model)
-
