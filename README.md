@@ -11,6 +11,7 @@ The project is organized into two main folders:
   For each subtask, we provide:
   - one script for **monolingual models**
   - one script for the **bilingual model**
+  The src folder also includes a Jupyter notebook used during the initial experimentation phase. It is not part of the final project implementation.
 
 Each script is configured with default arguments, including dataset paths.
 
