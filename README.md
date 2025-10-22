@@ -7,19 +7,22 @@ Repository for the NLP project — developed by **Tommaso Bergonzoni** and **Sim
 The project is organized into two main folders:
 
 - **data/** — contains all datasets, divided by subtask and by train/dev splits.  
-- **src/** — contains four Python scripts (two per subtask).  
-  For each subtask, we provide:
-  - one script for **monolingual models**
-  - one script for the **bilingual model**
-  The src folder also includes a Jupyter notebook used during the initial experimentation phase. It is not part of the final project implementation.
+- **src/** — contains four Python scripts, two per subtask:
+  - `bilingual_model_task_1.py`
+  - `bilingual_model_task_2.py`
+  - `monolingual_models_task_1.py` *(requires `--len=ita` or `--len=deu` argument)*
+  - `monolingual_models_task_2.py` *(requires `--len=ita` or `--len=deu` argument)*  
 
-Each script is configured with default arguments, including dataset paths.
+  The `src/` folder also includes a Jupyter notebook used during the early experimentation phase.  
+  It is **not** part of the final project implementation.
+
+Each script is preconfigured with default arguments, including dataset paths and training parameters.
 
 ---
 
 ## Usage
-To run a script, make sure your **working directory** is the **project root** (i.e., the folder that contains both `data/` and `src/`).  
-Then execute:
+To execute a script, ensure your **working directory** is the **project root** (i.e., the folder containing both `data/` and `src/`).
 
-```bash
-python script_name.py
+'''bash
+python script_name.py (--len=LANGUAGE in case of monolingual model)
+
