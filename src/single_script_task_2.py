@@ -157,7 +157,7 @@ def main():
         MODEL_NAME,
         num_labels=5,
         problem_type="multi_label_classification",  
-    )
+    ).to(device)
 
     print("\n\nModel Informations:\n")
     print("Tokenizer vocab size:", tokenizer.vocab_size)
