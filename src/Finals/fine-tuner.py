@@ -15,11 +15,13 @@ def main():
 
     # Hyperparameters to test
     model_names = [
-        "google/mt5-small",
+        "google/mt5-base",
+        "xlm-roberta-base",
+        "google/byt5-base"
     ]
 
-    learning_rates = [1e-5]
-    batch_sizes = [16]
+    learning_rates = [1e-5, 2e-5, 3e-5, 5e-5, 1e-4]
+    batch_sizes = [16, 32, 64, 128]
     epochs = [0] #To change
 
 
