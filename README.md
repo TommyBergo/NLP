@@ -7,22 +7,28 @@ Repository for the NLP project — developed by **Tommaso Bergonzoni** and **Sim
 The project is organized into two main folders:
 
 - **data/** — contains all datasets, divided by subtask and by train/dev splits.  
-- **src/** — contains four Python scripts, two per subtask:
-  - `bilingual_model_task_1.py`
-  - `bilingual_model_task_2.py`
-  - `monolingual_models_task_1.py` *(requires `--lang=ita` or `--lang=deu` argument)*
-  - `monolingual_models_task_2.py` *(requires `--lang=ita` or `--lang=deu` argument)*  
+- **src/** — contains the code and is divided into 3 folders
+  -**Baselines/** - contains the baseline models
+    - `bilingual_model_task_1.py`
+    - `bilingual_model_task_2.py`
+    - `monolingual_models_task_1.py` *(requires `--lang=ita` or `--lang=deu` argument)*
+    - `monolingual_models_task_2.py` *(requires `--lang=ita` or `--lang=deu` argument)*  
+  -**Finals/** - contains the final models
+    -'task_1_final.py'
+    -'task_2_final.py'
+    -'fine-tuner.py'
+  -**Results** - contains the finetuning results and the best model for each task. 
+    - finetuning_results.csv
 
-  The `src/` folder also includes a Jupyter notebook that contains the same code logic as the scripts, but presented in a more **readable and exploratory form**.  
-  The notebook was initially developed using the **multilingual model**, and it served as the foundation from which the **monolingual models** were later derived.  
-  Despite its similarity, the notebook is **not** part of the final project implementation.
-
-Each script is preconfigured with default arguments, including dataset paths and training parameters.
+Each script is preconfigured with default arguments, including dataset paths and training parameters. However, we suggest you to check the parameter options and set them accordingly to your needs. 
 
 ---
 
 ## Usage
 To execute a script, make sure your **working directory** is the **project root** (i.e., the folder containing both `data/` and `src/`).
 
+Verify that command "pwd" gives output: 
+"your/path/to/NLP"
+
 ```bash
-python script_name.py (--lang=LANGUAGE in case of monolingual model)
+python3 src/FolderName/script_name.py --parama1=value1 --param2=value2 ecc..

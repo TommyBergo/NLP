@@ -1,0 +1,2 @@
+model,lr,batch,epochs,f1_it,f1_de,acc_it,acc_de
+google/mt5-small,1e-05,16,0,0.0,0.0,0.5898,0.5252

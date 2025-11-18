@@ -2,21 +2,25 @@ import subprocess
 import itertools
 import csv
 from tabulate import tabulate
+import argparse
+import warnings
+warnings.filterwarnings("ignore")
 
 def main():
 
-    #Script path
-    PATH = "src/Finals/bilingual_3_models_4_languages_task_1.py"
+    parser = argparse.ArgumentParser(description="Fine tuner for the models - NLP project")
+    parser.add_argument("--path", type=str, help="Path to the file to fine_tune")
+    args = parser.parse_args()
+    PATH = args.path
 
     # Hyperparameters to test
     model_names = [
-        "xlm-roberta-base",
-        "google/mt5-base",
+        "google/mt5-small",
     ]
 
     learning_rates = [1e-5]
     batch_sizes = [16]
-    epochs = [0]  #TO CHANGE
+    epochs = [0] #To change
 
 
     # Launch function
@@ -70,7 +74,7 @@ def main():
 
 
     #Table Output
-    print("                EXPERIMENT RESULTS")
+    print("                \nEXPERIMENT RESULTS")
     print(
         tabulate(
             all_results,
@@ -83,7 +87,7 @@ def main():
 
     # Save CSV
     if all_results:
-        csv_file = "Results/finetuning_results.csv"
+        csv_file = "src/Results/finetuning_results.csv"
         keys = all_results[0].keys()
 
         with open(csv_file, "w", newline="") as f:

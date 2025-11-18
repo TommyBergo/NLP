@@ -6,5 +6,6 @@ During the development of this project, **ChatGPT 5** and **Gemini Pro 2.5** wer
 - Assist with **syntax and implementation details** for **PyTorch** and **Hugging Face Transformers**.  
 - Provide **error handling and debugging support**, helping to interpret and resolve coding issues.  
 - Limited support in writing the **project report in LaTeX**, specifically for managing the bibliography and improving **English phrasing and clarity**.
+- Assist with design decisions for the models. 
 
 All project design decisions and code implementations were independently carried out and verified by the authors.

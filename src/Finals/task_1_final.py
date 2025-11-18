@@ -14,6 +14,11 @@ from torch.utils.data import DataLoader
 from torch.optim import AdamW
 import torch
 
+#remove warnings
+import warnings
+warnings.filterwarnings("ignore")
+
+
 #CONSTANTS
 ITA_DATA = "data/subtask1/train/ita.csv"
 DEU_DATA = "data/subtask1/train/deu.csv"
@@ -121,11 +126,11 @@ def evaluate_model(model, loader, device, lang_name="", tokenizer=None, is_seq2s
 def main():
     parser = argparse.ArgumentParser(description="Train multi-label classifier on XLM-R model")
 
-    parser.add_argument("--model_name", type=str, default="google/mt5-base", help="Model to use: xlm-roberta-base, bert-base-multilingual-cased, "
+    parser.add_argument("--model_name", type=str, default="google/mt5-small", help="Model to use: xlm-roberta-base, bert-base-multilingual-cased, "
         "google/mt5-base, or google/byt5-base.")
     parser.add_argument("--lr", type=float, default=2e-5, help="Learning rate")
     parser.add_argument("--batch_size", type=int, default=32, help="Batch size")
-    parser.add_argument("--epochs", type=int, default=6, help="Epochs number")
+    parser.add_argument("--epochs", type=int, default=20, help="Epochs number")
     parser.add_argument("--weight_decay", type=float, default=0.01, help="Weight decay")
 
     args = parser.parse_args()
