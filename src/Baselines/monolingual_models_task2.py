@@ -14,8 +14,14 @@ import torch
 import numpy as np
 
 LANG_CONFIG = {
-    "ita": {"data_path": "data/subtask2/train/ita.csv", "model_name": "osiria/distilbert-base-italian-cased"},
-    "deu": {"data_path": "data/subtask2/train/deu.csv", "model_name": "distilbert-base-german-cased"}
+    "ita": {
+        "data_path": "data/subtask2/train/ita.csv",
+        "model_name": "dbmdz/bert-base-italian-cased"
+    },
+    "deu": {
+        "data_path": "data/subtask2/train/deu.csv",
+        "model_name": "bert-base-german-cased"
+    }
 }
 LABEL_COLS = ["political", "racial/ethnic", "religious", "gender/sexual", "other"]
 

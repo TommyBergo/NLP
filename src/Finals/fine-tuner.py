@@ -20,9 +20,9 @@ def main():
         "xlm-roberta-base",
     ]
 
-    learning_rates = [1e-5, 2e-5]
-    batch_sizes = [64,128]
-    epochs = [15] #To change
+    learning_rates = [5e-6, 1e-5, 2e-5, 5e-5]
+    batch_sizes = [16,32,64,128,256]
+    epochs = [30] #early stopping
 
     # Launch function
     def run_experiment(model_name, lr, batch, ep=epochs):

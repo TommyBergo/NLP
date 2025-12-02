@@ -62,7 +62,7 @@ def tokenize_batch(batch, tokenizer, is_seq2seq=False):
                 label_texts,
                 padding="max_length",
                 truncation=True,
-                max_length=4,  # sufficiente per "0" o "1"
+                max_length=4,  
             )
         
         model_inputs["labels"] = labels_enc["input_ids"]
@@ -363,7 +363,7 @@ def main():
     acc_it, f1_it =evaluate_model(model, test_loader_it, device, "Italian", tokenizer, is_seq2seq)
     acc_de, f1_de = evaluate_model(model, test_loader_de, device, "German", tokenizer, is_seq2seq)
 
-    # ------ RETURN STRING FOR OUTSIDE SCRIPT ------
+    # ------ RETURN STRING FOR OUTSIDE FINETUNING SCRIPT ------
     result_string = (
         f"RESULT: model={MODEL_NAME} "
         f"| f1_it={f1_it:.4f} "

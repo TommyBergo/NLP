@@ -13,17 +13,18 @@ from torch.utils.data import DataLoader
 from torch.optim import AdamW
 import torch
 
-# CONSTANTS
+#Constants
 LANG_CONFIG = {
     "ita": {
         "data_path": "data/subtask1/train/ita.csv",
-        "model_name": "osiria/distilbert-base-italian-cased"
+        "model_name": "dbmdz/bert-base-italian-cased"
     },
     "deu": {
         "data_path": "data/subtask1/train/deu.csv",
-        "model_name": "distilbert-base-german-cased"
+        "model_name": "bert-base-german-cased"
     }
 }
+
 MAX_LEN = 256
 
 # ======== FUNCTIONS ==========
