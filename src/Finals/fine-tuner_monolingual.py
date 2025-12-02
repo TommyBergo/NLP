@@ -34,8 +34,8 @@ def main():
         "TUM/GottBERT_large", # <-- CORRECTED NAME
     ]
     
-    learning_rates = [1e-5, 2e-5]
-    batch_sizes = [64, 128]
+    learning_rates = [2e-5]
+    batch_sizes = [128]
     epochs = [15] # Epochs to run are fixed because of early stopping implemented
 
     # Launch function
