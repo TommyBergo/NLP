@@ -18,7 +18,6 @@ def main():
     model_names = [
         "google/mt5-base",
         "xlm-roberta-base",
-        "google/byt5-base"
     ]
 
     learning_rates = [1e-5, 2e-5]
