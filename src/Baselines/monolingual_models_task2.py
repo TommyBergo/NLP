@@ -15,7 +15,7 @@ import numpy as np
 
 LANG_CONFIG = {
     "ita": {"data_path": "data/subtask2/train/ita.csv", "model_name": "osiria/distilbert-base-italian-cased"},
-    "deu": {"data_path": "data/subtask2/train/deu.csv", "model_name": "osiria/distilbert-base-german-cased"}
+    "deu": {"data_path": "data/subtask2/train/deu.csv", "model_name": "distilbert-base-german-cased"}
 }
 LABEL_COLS = ["political", "racial/ethnic", "religious", "gender/sexual", "other"]
 
