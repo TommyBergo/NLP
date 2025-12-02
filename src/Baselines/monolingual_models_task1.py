@@ -21,7 +21,7 @@ LANG_CONFIG = {
     },
     "deu": {
         "data_path": "data/subtask1/train/deu.csv",
-        "model_name": "osiria/distilbert-base-german-cased"
+        "model_name": "distilbert-base-german-cased"
     }
 }
 MAX_LEN = 256
