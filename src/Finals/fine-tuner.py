@@ -89,7 +89,10 @@ def main():
 
     # Save CSV
     if all_results:
-        csv_file = "src/Results/finetuning_results.csv"
+        if(PATH.contains("1")):
+            csv_file = "src/Results/finetuning_results_1.csv"
+        else:
+            csv_file = "src/Results/finetuning_results_2.csv"
         keys = all_results[0].keys()
 
         with open(csv_file, "w", newline="") as f:
