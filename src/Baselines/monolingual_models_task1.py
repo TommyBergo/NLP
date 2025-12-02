@@ -17,11 +17,11 @@ import torch
 LANG_CONFIG = {
     "ita": {
         "data_path": "data/subtask1/train/ita.csv",
-        "model_name": "dbmdz/bert-base-italian-cased"
+        "model_name": "osiria/distilbert-base-italian-cased"
     },
     "deu": {
         "data_path": "data/subtask1/train/deu.csv",
-        "model_name": "bert-base-german-cased"
+        "model_name": "osiria/distilbert-base-italian-cased"
     }
 }
 MAX_LEN = 256
