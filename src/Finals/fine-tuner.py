@@ -21,10 +21,10 @@ def main():
         "google/byt5-base"
     ]
 
-    learning_rates = [1e-5, 2e-5, 3e-5, 5e-5, 1e-4]
-    batch_sizes = [16, 32, 64, 128]
-    epochs = [0] #To change
-
+    learning_rates = [3e-5, 5e-5]
+    batch_sizes = [16, 32]
+    epochs = [15] #To change
+learning_rates = [3e-5, 5e-5]
 
     # Launch function
     def run_experiment(model_name, lr, batch, ep=epochs):
