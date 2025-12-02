@@ -1,3 +1,4 @@
+import sys
 import subprocess
 import itertools
 import csv
@@ -28,7 +29,7 @@ def main():
     # Launch function
     def run_experiment(model_name, lr, batch, ep=epochs):
         cmd = [
-            "python",
+            sys.executable,
             PATH,
             "--model_name", model_name,
             "--lr", str(lr),
