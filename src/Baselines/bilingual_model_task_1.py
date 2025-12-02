@@ -69,7 +69,7 @@ def evaluate_model(model, loader, device, lang_name=""):
 def main():
     parser = argparse.ArgumentParser(description="Train single-label classifier on BERT model")
 
-    parser.add_argument("--model_name", type=str, default="bert-base-multilingual-cased", help="Name of the model: (es. xlm-roberta-base, bert-base-multilingual-cased)")
+    parser.add_argument("--model_name", type=str, default="distilbert-base-multilingual-cased", help="Name of the model: (es. xlm-roberta-base, bert-base-multilingual-cased)")
     parser.add_argument("--lr", type=float, default=2e-5, help="Learning rate")
     parser.add_argument("--batch_size", type=int, default=32, help="Batch size")
     parser.add_argument("--epochs", type=int, default=6, help="Epochs number")
